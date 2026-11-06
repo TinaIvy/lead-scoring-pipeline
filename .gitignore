@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Secrets - never commit these
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Test cache
+.pytest_cache/
+
+# Packaging output
+*.egg-info/
+build/
+dist/
+
+# Pipeline output
+logs/
+output/
+
+# Mac system file
+.DS_Store

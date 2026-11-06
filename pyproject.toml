@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead-scoring-pipeline"
+version = "0.1.0"
+description = "Score leads from CRM-style data and prepare offline conversions for an ad platform (made-up data, simulated upload)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+lead-pipeline = "lead_pipeline.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
